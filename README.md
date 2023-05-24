@@ -1,24 +1,29 @@
 # Linux top, ps, jobs, kill
-### 20214021 parkyoonchae
+### 20214021박윤채
+
 
 ### top
 - 리눅스 시스템의 운용 상황을 실시간으로 전반적인 상황을 모니터링하거나 프로세스 관리를 할 수 있는 유틸리티 `CPU, Memory, Process`
 - 옵션 없이 입력하면 interval 간격(기본 3초)으로 화면을 갱신하며 정보를 보여줌
-- #### top 실행 전 옵션
+  - top 실행 전 옵션
+
 
 ### 세부 정보 필드별 항목
-- `PID`: 프로세스 아이디(Process ID)
-- `USER`: 프로세스를 실행시킨 사용자 ID
-- `PRI`: 프로세스의 우선순위(priority)
-- `NI`: NICE값, 일의 nice value값(마이너스를 가지는 nice value는 우선순위가 높음)
-- `VIRT`: 가상 메모리의 사용량(SWAP+RES)
-- `RES`: 현재 페이지가 상주하고 있는 크기(Resident Size)
-- `SHR`: 분할된 페이지, 프로세스에 의해 사용된 메모리를 나눈 메모리의 총합
-- `S`: 프로세스의 상태 `S(sleeping),R(running),W(swapped out process),Z(zombies)`
-- `%CPU`: 프로세스가 사용하는 CPU의 사용율
-- `%MEM`: 프로세스가 사용하는 메모리의 사용율
-- `TIME+`: 프로세스가 시작된 이후 경과된 총 시간
-- `COMMAND`: 실행된 명령어 
+|항목 |내용|
+|:---|:---|
+|PID|프로세스 아이디(Process ID)|
+|USER|프로세스를 실행시킨 사용자 ID|
+|PRI|프로세스의 우선순위(priority)|
+|NI|NICE값, 일의 nice value값(마이너스를 가지는 nice value는 우선순위가 높음)|
+|VIRT|가상 메모리의 사용량(SWAP+RES)|
+|RES|현재 페이지가 상주하고 있는 크기(Resident Size)|
+|SHR|분할된 페이지, 프로세스에 의해 사용된 메모리를 나눈 메모리의 총합|
+|S|프로세스의 상태 `S(sleeping),R(running),W(swapped out process),Z(zombies)`|
+|%CPU|프로세스가 사용하는 CPU의 사용율|
+|%MEM|프로세스가 사용하는 메모리의 사용율|
+|TIME+|프로세스가 시작된 이후 경과된 총 시간|
+|COMMAND|실행된 명령어|
+
 
 `Load average`
 - 세 개의 숫자는 각각 1분, 5분, 15분 간의 평균 실행/대기 중인 프로세스의 수를 나타냄.
